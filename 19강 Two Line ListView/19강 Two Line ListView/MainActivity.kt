@@ -27,6 +27,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         var key = arrayOf("str1", "str2")
+        /* id가 text1,text2인 이유는 안드로이드에서 
+        기본적으로 제공하는 android.R.layout.simple_expandable_list_item_2에 id가 위와 같이 설정되어 있기 때문
+        */
         var ids = intArrayOf(android.R.id.text1, android.R.id.text2)
         var adapter = SimpleAdapter(this, list, android.R.layout.simple_expandable_list_item_2, key, ids)
         listView.adapter = adapter
